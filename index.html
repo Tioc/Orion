@@ -2,26 +2,36 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>WOLF DOG HOME</title>
+    <title>wolf dog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style01.css" media="screen">
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Iweb</h1>
-      <h2 class="project-tagline">2016.01.14-Don</h2>
-    </section>
+  <header class="page-header">
+      <h1 id="logo">web look 我的前端视界</h1>
+      <h1 class="drop-down" onclick="INDEX.dropdown()">﹀</h1>
+  </header>
 
-    <section class="main-content">
-      <p>哈哈哈哈哈哈哈！Hello Dog！</p>
+  <section class="main-content">
+      <nav class="nav"></nav>
 
-      <footer class="site-footer">
-     ©我的地盘
-      </footer>
 
-    </section>
 
-  
+  </section>
+
+  <footer class="site-footer">
+    ©2016.01.14 by Don
+  </footer>
+  <script src="js/jquery-1.8.3.js"></script>
+  <script>
+    var INDEX={};
+    INDEX.dropdown=function(){
+      $(".page-header").css({"height":"10%","padding":"1rem"});
+      $(".page-header #logo").css("float","left");
+      $(".page-header .drop-down").css("display","none");
+    }
+
+  </script>
   </body>
 </html>
