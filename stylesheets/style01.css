@@ -1,22 +1,73 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box; margin: 0;padding:0.625rem;color: #fff;}
 
-html,body {
-  width: 100%;
+html{
+  height: 100%;
+  padding: 0;}
+
+body {
+  height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: #606c71;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957);}
+  font-family: Microsoft Yahei,Helvetica, Arial, sans-serif;
+  color: #fff;
+  line-height: 20px;  }
 
 a {
-  color: #1e6bb8;
   text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+
+/*滚动条*/
+::-webkit-scrollbar{width:0;}
+::-webkit-scrollbar-track{background:none;}
+::-webkit-scrollbar-track:hover {background: rgba(255, 255, 255, 0.1);}
+::-webkit-scrollbar-thumb{background: rgba(0, 0, 0, 0.5);border-radius:5px }
+::-webkit-scrollbar-thumb:hover {background: rgba(0, 0, 0, 0.6);}
+
+/*整个页面*/
+.wrapper{
+  padding:0;
+  height: 100%;
+  min-height: 100%;
+  /*overflow: hidden;*/
+}
+
+/*页面主体三部分*/
+.page-header {
+  min-height: 10%;
+  background-color: #1e6bb8;
+  background-image: linear-gradient(120deg, #155799, #159957);
+ }
+.page-content{
+  min-height: 85%;
+  background-color: antiquewhite;
+}
+.page-footer{
+  min-height:5%;
+  text-align: center;
+  background-color: #333;
+}
+
+/**/
+.header {
+  display: inline-block;
+  width: 30%;
+}
+.nav{
+  display: inline-block;
+  width: 50%;
+  float: right;
+}
+.nav a{
+  display: inline-block;
+  margin:20px;
+}
+.nav a:hover{
+  color:orangered;
+  border-bottom: 2px solid orangered;  }
+
+
+
 
 .btn {
   display: inline-block;
@@ -28,24 +79,14 @@ a {
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
-  .btn + .btn {
-    margin-left: 1rem; }
+.btn + .btn {
+  margin-left: 1rem; }
 
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
-
-.page-header {
-  height:100%;
-  padding-top:20%;
-  color: #fff;
-  text-align: center;  }
-
-.main-content{
-  height:90rem
-}
 
 
 
