@@ -13,8 +13,8 @@ body {
   font-family: Microsoft Yahei,Helvetica, Arial, sans-serif;
   color: #fff;
   line-height: 20px;
-  background: url("../images/Zed_Splash_Centered_0.jpg") fixed no-repeat;
-  background-size:100% 100%; }
+  background: url("../images/Zed_Splash_Centered_1.jpg") fixed no-repeat;
+  background-size:100%; }
 
 a {
   text-decoration: none; }
@@ -26,12 +26,17 @@ a {
 ::-webkit-scrollbar-thumb{background: rgba(0, 0, 0, 0.5);border-radius:5px }
 ::-webkit-scrollbar-thumb:hover {background: rgba(0, 0, 0, 0.6);}
 
+/*选中*/
+::selection{
+  background-color:rgba(0,150,50,1);
+}
+
 /*整个页面*/
 .wrapper{
   padding:0;
   height: 100%;
   min-height: 100%;
-  background: rgba(255,255,255,0.3);
+  background:linear-gradient(120deg, rgba(255,255,255,0.1),rgba(255,255,255,0.2));
   overflow: hidden;
 }
 
@@ -70,11 +75,9 @@ a {
   margin:20px;
   border-bottom: 2px solid rgba(255,255,255,0.0);
 }
-.nav a:hover{
-  border-bottom: 2px solid rgba(255,255,255,0.5);  }
-
-
-
+.nav a:hover,.nav a.selected{
+  border-bottom: 2px solid rgba(255,255,255,0.8);
+}
 
 .btn {
   display: inline-block;
