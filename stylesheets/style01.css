@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box; margin: 0;padding:0.625rem;color: #fff;}
+  box-sizing: border-box; margin: 0;padding:0.5rem;color: #fff;}
 
 html{
   height: 100%;
@@ -12,7 +12,9 @@ body {
   font-size: 16px;
   font-family: Microsoft Yahei,Helvetica, Arial, sans-serif;
   color: #fff;
-  line-height: 20px;  }
+  line-height: 20px;
+  background: url("../images/Zed_Splash_Centered_0.jpg") fixed no-repeat;
+  background-size:100% 100%; }
 
 a {
   text-decoration: none; }
@@ -29,29 +31,32 @@ a {
   padding:0;
   height: 100%;
   min-height: 100%;
-  /*overflow: hidden;*/
+  background: rgba(255,255,255,0.3);
+  overflow: hidden;
 }
 
 /*页面主体三部分*/
 .page-header {
   min-height: 10%;
-  background-color: #1e6bb8;
-  background-image: linear-gradient(120deg, #155799, #159957);
+  border-bottom: 1px dotted rgba(255,255,255,0.5);
+  /*background-image: linear-gradient(120deg, #155799, #159957);*/
  }
 .page-content{
   min-height: 85%;
-  background-color: antiquewhite;
+  /*background: rgba(255,255,255,0.3);*/
+  /*background-color: antiquewhite;*/
 }
 .page-footer{
+  font-size: 12px;
   min-height:5%;
   text-align: center;
-  background-color: #333;
+  /*background-color: #333;*/
 }
 
 /**/
 .header {
   display: inline-block;
-  width: 30%;
+  width: 20%;
 }
 .nav{
   display: inline-block;
@@ -63,8 +68,7 @@ a {
   margin:20px;
 }
 .nav a:hover{
-  color:orangered;
-  border-bottom: 2px solid orangered;  }
+  border-bottom: 2px solid rgba(255,255,255,0.5);  }
 
 
 
