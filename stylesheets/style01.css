@@ -13,7 +13,7 @@ body {
   font-family: Microsoft Yahei,Helvetica, Arial, sans-serif;
   color: #fff;
   line-height: 20px;
-  background: url("../images/Zed_Splash_Centered_1.jpg") fixed no-repeat;
+  background: #f5f5f5;
   background-size:100%; }
 
 a {
